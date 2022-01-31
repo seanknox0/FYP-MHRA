@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MHRA</string>
+    <string name="no_account">Not own an account? <b>Sign up here!</b></string>
+</resources>
