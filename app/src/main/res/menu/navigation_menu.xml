@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item android:title="Resources">
+        <menu>
+            <item
+                android:id="@+id/navQuestion"
+                android:icon="@drawable/ic_baseline_question_answer_24"
+                android:title="Questionnaire"/>
+
+            <item
+                android:id="@+id/navRelief"
+                android:icon="@drawable/ic_baseline_free_breakfast_24"
+                android:title="Instant Relief"/>
+
+            <item
+                android:id="@+id/navLearning"
+                android:icon="@drawable/ic_baseline_menu_book_24"
+                android:title="Learning"/>
+
+            <item
+                android:id="@+id/navPersonal"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="Personal"/>
+        </menu>
+    </item>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/navAccount"
+                android:icon="@drawable/ic_baseline_account_circle_24"
+                android:title="My Account"/>
+            <item
+                android:id="@+id/navLogin"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="Login"/>
+        </menu>
+    </item>
+
+    <item android:title="Application">
+        <menu>
+            <item
+                android:id="@+id/navSettings"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Settings"/>
+
+            <item
+                android:id="@+id/navReview"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Review"/>
+        </menu>
+    </item>
+</menu>

@@ -4,7 +4,6 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PatternMatcher
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
@@ -92,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Logged in as $email", Toast.LENGTH_SHORT).show()
 
                 //open profile
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, HomeActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -106,7 +105,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null){
             // user already logged in
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }
     }

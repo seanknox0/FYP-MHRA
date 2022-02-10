@@ -1,15 +1,16 @@
 package ie.wit.mhra
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 import com.google.firebase.auth.FirebaseAuth
-import ie.wit.mhra.databinding.ActivityProfileBinding
+import ie.wit.mhra.databinding.ActivityAccountBinding
 
-class ProfileActivity : AppCompatActivity() {
+class AccountActivity: AppCompatActivity() {
     //ViewBinding
-    private lateinit var binding: ActivityProfileBinding
+    private lateinit var binding: ActivityAccountBinding
 
     //ActionBar
     private lateinit var actionBar: ActionBar
@@ -19,12 +20,12 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityProfileBinding.inflate(layoutInflater)
+        binding = ActivityAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //Configure ActionBar
         actionBar = supportActionBar!!
-        actionBar.title = "Profile"
+        actionBar.title = "My Account"
 
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
